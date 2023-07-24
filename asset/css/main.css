@@ -386,6 +386,10 @@ section img{
     -moz-transition: all ease-out 0.3s;
     -ms-transition: all ease-out 0.3s;
     -o-transition: all ease-out 0.3s;
+    display: none;
+}
+.floating-bt.show{
+    display: block;
 }
 .floating-bt span{
     position: absolute;

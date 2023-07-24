@@ -186,6 +186,18 @@
             $(".close-bt").click(function(){
                 $(".overlay").removeClass("show");
             });
+
+            var yourNavigation = $(".floating-bt");
+                stickyDiv = "show";
+                yourHeader = $('.hero').height() - 100;
+
+            $(window).scroll(function() {
+            if( $(this).scrollTop() > yourHeader ) {
+                yourNavigation.addClass(stickyDiv);
+            } else {
+                yourNavigation.removeClass(stickyDiv);
+            }
+            });
         }(jQuery));
     </script>
 </body>
